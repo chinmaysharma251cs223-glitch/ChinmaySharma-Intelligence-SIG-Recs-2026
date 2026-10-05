@@ -79,8 +79,8 @@ from torchvision.models import resnet50, ResNet50_Weights
 # 1. CONFIGURATION
 # ============================================================
 
-DATA_PATH = "train.csv"
-IMAGE_DIR = "train_images"
+DATA_PATH = "/kaggle/input/competitions/shopee-product-matching/train.csv"
+IMAGE_DIR = "/kaggle/input/competitions/shopee-product-matching/train_images"
 
 IMAGE_COLUMN = "image"
 IMAGE_ID_COLUMN = "posting_id"
@@ -2305,8 +2305,8 @@ for query_id in query_ids:
 # ignored during prediction so that the inference path remains blind to
 # the ground-truth groups.
 
-TEST_DATA_PATH = "test.csv"
-TEST_IMAGE_DIR = "test_images"
+TEST_DATA_PATH = "/kaggle/input/competitions/shopee-product-matching/test.csv"
+TEST_IMAGE_DIR = "/kaggle/input/competitions/shopee-product-matching/test_images"
 TEST_TOP_K_TEXT = 20
 TEST_TOP_K_IMAGE = 20
 TEST_BATCH_SIZE = 256
